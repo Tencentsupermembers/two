@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="container">
+    <x-header :left-options="{showBack: true, backText: '', preventGoBack: false}">登录</x-header>>
      <group title="set keyboard=number and is-type=china-mobile">
       <x-input title="手机号码" name="mobile" placeholder="请输入手机号码" keyboard="number" is-type="china-mobile"></x-input>
     </group>
@@ -18,4 +19,27 @@
     </group> 
   </div>
 </template>
-  
+<script>
+import{ XInput, Group, XButton, Cell, Group, XHeader, Panel,} from 'vux'
+export default {
+  components: {
+    XInput,
+    XButton,
+    Group,
+    Cell,
+    XHeader,
+    XButton
+},
+data () {
+   return {
+     password: '',
+     password2: ''
+   }
+   },
+   methods: {
+     
+   }
+}
+
+</script>
+
